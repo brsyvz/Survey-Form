@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Product survey form</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="normalize.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1 id="title">Product Survey Form</h1>
+    <p id="description">
+      Thanks For Your Purchase. Please help us to improve our products by
+      filling up the form
+    </p>
+  </header>
+  <div class="centerForm">
+    <form id="survey-form">
+      <div class="setSpace">
+        <label id="name-label" for="name">Name *</label>
+        <input type="text" id="name" name="name-label" placeholder="Enter your name.." required />
+      </div>
+      <div class="setSpace">
+        <label id="email-label" for="email">Email *</label>
+        <input type="email" id="email" name="email-label" placeholder="Enter your e-mail address" required />
+      </div>
+
+      <div class="setSpace">
+        <label id="number-label" for="number">Age (optional)</label>
+        <input type="number" id="number" name="number-label" placeholder="Age" maxlength="2"
+          oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+          min="5" max="99" />
+      </div>
+
+      <div class="setSpace">
+        <label for="dropdown">Product *</label>
+        <select name="products" id="dropdown">
+          <option value="" selected disabled>Select a product</option>
+          <option value="ares">Ares</option>
+          <option value="diez">Diez</option>
+          <option value="efes">Efes</option>
+          <option value="olympia">Olympia</option>
+        </select>
+      </div>
+
+      <div class="setSpace">
+        <p>Would you recommend our product to a friend?</p>
+        <label class="container">Definetly
+          <input type="radio" checked="checked" name="recommend" value="Definetly">
+          <span class="rBox"></span>
+        </label>
+        <label class="container">Maybe
+          <input type="radio" name="recommend" value="Maybe">
+          <span class="rBox"></span>
+        </label>
+        <label class="container">Not sure
+          <input type="radio" name="recommend" value="Not sure">
+          <span class="rBox"></span>
+        </label>
+
+
+      </div>
+      <hr>
+      <div class="setSpace">
+        <p>What was the primary reasons for choosing our
+          product?</p>
+        <label class="a container">Price
+          <input type="checkbox" checked="checked" value="Price">
+          <span class="cBox"></span>
+        </label>
+        <label class="container">Quality
+          <input type="checkbox" value="Quality">
+          <span class="cBox"></span>
+        </label>
+        <label class="container">Color variety
+          <input type="checkbox" value="Color variety">
+          <span class="cBox"></span>
+        </label>
+        <label class="container">Customer Service
+          <input type="checkbox" value="Customer Service">
+          <span class="cBox"></span>
+        </label>
+      </div>
+      <hr>
+      <div class="setSpace">
+        <p>For other feedbacks</p>
+        <textarea rows="5" cols="40" placeholder="Please tell us more..."></textarea>
+      </div>
+
+      <div class="setSpace">
+        <input type="submit" id="submit" value="Submit" />
+      </div>
+
+    </form>
+  </div>
+
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+</body>
+
+</html>
