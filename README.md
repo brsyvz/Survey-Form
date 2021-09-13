@@ -2,4 +2,4 @@
 
 <h2>About:</h2>
   
-  <p>I practiced responsive design and element alignments by doing this webpage</p>
+  <p>Responsive form design with custom checkbox and radio buttons</p>
