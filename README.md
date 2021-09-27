@@ -1,4 +1,4 @@
-<b>Live:</b> https://brsyvz.github.io/Survey-Form/
+<b>Live:</b> https://brsyvz.github.io/survey-form/
 
 <h2>About:</h2>
   
